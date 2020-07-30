@@ -6,7 +6,7 @@ Application Web pour déterminer les zones géographiques préférentielles d’
 ## Objectif
 Mon besoin était de déterminer *finement* sur la carte de France pour les départements 64, 40, 33, 17, 85 et 44 les lieux qui correspondent à des critères sélectionnés.
 
-Les résultats correspondent à des points de 500m de diamètre sur un maximum de 30km du bord de côte.
+Les résultats correspondent à des points de 500m de diamètre sur un maximum de 30km du bord de côte, ce qui correspond à ma distance maximale souhaitable.
 
 ## Présentation 
 Ce repo a pour but de partager des éléments fonctionnels et techniques (difficultés rencontrées, recommandations, détails de mise en oeuvre) de la Web App construite.
@@ -24,11 +24,6 @@ TODO Démo gif ci-dessous :
 
 ## Côté fonctionnel
 35 critères ont été intégrés à date. 
-
-Evidemment, tous les critères souhaités ([géorisques](https://www.georisques.gouv.fr/) par exemple) et souhaitables n'ont pas été intégrés.
-
-Des résultats, pour les autres critères non pris en compte, un filtre supplémentaire manuelle sera à effectuer.  
-Sur un objectif d'achat immobilier, la validation du secteur sur place m'apparaît plus que recommandé.
 
 Les détails se trouvent dans le fichier [my_town_detail_functional.md](/my_town_detail_functional.md "détails fonctionnels sur le projet")
 
