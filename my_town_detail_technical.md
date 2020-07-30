@@ -2,7 +2,7 @@
 La construction s'est faite à partie d'un backlog initial, centré sur les points principaux que sont une recherche efficace et un affichage exploitable des points.
 
 La construction itérative a fait émerger de nouveaux besoins et de nouvelles idées dont certains n'ont pas été implémentés ou intégrés à la solution.
-En effet, la cible était de disposer d'un App opérationnelle permettant de donner des résultats concrets suffisamment pertinents et exploitables.
+En effet, la cible était de disposer d'un App opérationnelle permettant de donner des résultats concrets suffisamment pertinents et exploitables.  
 Ainsi, certaines US n'ont pas été prises car :
  - elles avaitent une faible Businness Value
  - l'effort de mise en oeuvre et/ou d'intégration était jugé trop important
@@ -15,11 +15,11 @@ Stack technique : Eclipse, Java, principales libs : scraping avec Jsoup et de qu
 
 En terme d'organisation projet, je suis sur un package par critère avec un *main* qui sort un fichier csv pour le critère à intégrer dans la WebApp
 
-Le process général d'un *main* est :
+Le process général d'un *main* pour un critère est :
  - phase 1 : scraping i.e récupération brute des données
  - phase 2 : extraction des données et écriture dans un fichier csv de travail dédié  
 On itère les phases 1 et 2 jusqu'à l'obtention d'un fichier de travail satisfaisant.
- - phase 3 : alimentation des latitudes et longitudes non renseignées, par appel d'API Maps ou à la main en cas d'échec (vérification Google + recherche manuelle dans Maps)
+ - phase 3 : alimentation des latitudes et longitudes non renseignées, par appel d'API Maps (api OpenStreeetMap bien moins efficace) ou à la main en cas d'échec (vérification Google + recherche manuelle dans Maps)
  Il arrive également qu'à cette phase qu'on fasse des corrections manuelles d'adresse.  
  On écrit en sorite dans un nouveau fichier csv qui sera celui cible.
  On itère la phase 3 jusqu'au remplissage complet des latitudes et longitudes.
@@ -28,20 +28,24 @@ On itère les phases 1 et 2 jusqu'à l'obtention d'un fichier de travail satisfa
  En cas de Warning de la phase 4, le point apparaît en général hors du périmètre établi, l'appel API de récupération des lat/lon n'a pas été pertinent, il faut redresser les données à la main avec Google + Google Maps.
  En phase 5, par exemple, si en analyse visuelle on voit très peu de généralistes en Vendée, il faut vérifier si c'est réellement le cas ou si on n'a pas récupéré toutes les données.  
  On itère les phases 4 et 5 pour avoir aucun Warning en pahse 4 et une analyse Métier satisfaisante en phase 5.
- A ce stade, on dispose du fichier de sortie cvs qui servira d'input en partie Back de la Web App.
+ A ce stade, on dispose du fichier de sortie cvs qui servira d'input en partie Back de la Web App.  
+ Ce dernier comprend globalement les colonnes suivantes : 
+  - département
+  - nom du site ou nom et prénom d'un professionel de santé
+  - adresse
+  - code postal
+  - ville voire en plus code insee
+  - latitude
+  - longitude
 
- 
- 
-
-
-Test de manipulation de fichiers geojson avec la lib de https://github.com/ngageoint/simple-features-geojson-java mais ca tient pas la volumétrie et décevant en durée de traitement, j'ai procédé autrement, je le détaille plus bas.
-
-Tips, retours d'expérience et conseils en scraping :
-  TODO
-
-
-
-
+ #### Retours sur le scraping
+  - librairie [Jsoup](https://jsoup.org/) simple et efficace (jsoup peut gérer les cookies si besoin)
+  - randomiser de quelques secondes les appels de scraping en init et sur les appels suivants
+  - sur limitation à cause de quota journalier maximal d'appels, changer momentanément d'ip avec [VPNBook](https://www.vpnbook.com/) par exemple.
+  - rajouter en header un user-agent courant et le referrer utilisé sur le site constituent une bonne pratique
+  - ne pas oublier l'open data qui donne directement les données sous un format, normalement directement exploitable.
+  - analyser entièrement le code source de la page Web à scraper. En effet, il arrive régulèrement que les données soient directement disponibles sous forme de lien vers un fichier json complet ou que ce dernier soit déclaré dans une variable javscript dans le code Html !
+   
 ### Projet Back - services REST
 Stack technique : Eclipse, Java 8, Spring Boot (start Web) avec Maven avec twitter4j + commons-lang/io
 
