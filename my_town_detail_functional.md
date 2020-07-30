@@ -7,7 +7,7 @@ Il convient de déterminer des ~ 67000 points de la carte prénsentée ci-dessou
 Zoom sur la carte pour visualiser précisément un ensemble de points :
 ![image of the map all points](/screenshots/screenshot_map_all_points_detail_example.png "Zoom sur la map des points de résultat")
 
-## Critères mis en place :
+## Critères mis en place
   - Loisirs : plage, cinéma, piscine, médiathèque, salle de sport
   - Santé : pédiatre, généraliste, pharmacie, gynécologue, hopital, maternité (de niveau 3 dans le cadre du projet), dermatologue, ophtalmologue
   - Education : maternelle, primaire, collège, lycée, études supérieures
@@ -20,3 +20,15 @@ Evidemment, tous les critères souhaités ([géorisques](https://www.georisques.
 
 Un filtre supplémentaire manuelle sera donc à effectuer en résultats de recherche.  
 Sur un objectif d'achat immobilier, la validation du secteur sur place m'apparaît également plus que recommandée.
+
+## Fonctionnalités rendues
+
+### Recherche
+
+### Résultats sur la carte
+
+### Détails textuels complémentaires d'un point de résultat
+
+### Historique des recherches
+
+
