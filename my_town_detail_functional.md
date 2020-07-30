@@ -62,4 +62,11 @@ L'historique des recheches perdure après la fermeture du navigateur, mais pas e
 - affichage des paramètres des anciennes recherches
 
 ## Utilisation
-TODO
+
+L'application Web se démarre sous Eclipse (par ex) avec une config de JVM par défaut, issue du .ini :
+  -XX:MaxPermSize=256m
+  -Xms256m
+  -Xmx1024m
+et tourne sur un pc portable personnel.
+
+TODO gif supplémentaires
