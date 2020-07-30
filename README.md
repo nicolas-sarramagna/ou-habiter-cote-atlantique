@@ -28,7 +28,7 @@ TODO Démo gif ci-dessous :
 Les détails se trouvent dans le fichier [my_town_detail_functional.md](/my_town_detail_functional.md "détails fonctionnels sur le projet")
 
 ## Côté technique
-3 projets sous Eclipse
+3 projets :
   - 1 projet **Source** dédié à la collecte des données et leur mise en forme, projet non lié à la Web App.
   - 1 projet **Back** Web App backend qui sert des services REST
   - 1 projet **Front** Web App frontend Javascript pour l'interface
