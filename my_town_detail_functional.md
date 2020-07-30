@@ -1,3 +1,10 @@
+Ainsi, il convient de déterminer, des ~ 67000 points de la carte prénsentée ci-dessous, quels sont ceux qui correpondent le mieux à mes critères.
+
+![image of the map all points](/screenshots/screenshot_map_all_points.png "Map avec tous les points de la carte")
+
+Zoom sur la carte pour visualiser précisément un ensemble de points :
+![image of the map all points](/screenshots/screenshot_map_all_points_detail_example.png "Zoom sur la map des points de résultat")
+
 Domaines :
   - Loisirs : critères Plage, Cinéma, Piscine, Médiathèque, Salle de Sport
   - Santé : critères pédiatre, généraliste, pharmacie, gynécologue, hopital, maternité (de niveau 3 pour mes besoins de recherche), dermatologue, ophtalmologue
