@@ -95,7 +95,8 @@ Interface divisée en 4 parties :
 	TODO screenshot
 	- utilisation de la lib js pour Leaflet [L.Control.ZoomMin](https://github.com/alanshaw/leaflet-zoom-min) pour le bouton supplémentaire sur la map permettant de revenir au zoom global d'un clic
 	- utilisation de la lib js pour Leaflet [leaflet.browser.print](https://github.com/Igor-Vladyka/leaflet.browser.print) pour l'export pdf de la carte
-
+	- affichage du score dans les markers Leaflet que pour un nombre de résultats < 1000 sinon performance d'affichage dégradée ; utilisation du bindTooltip à améliorer
+	
 - zone de résultats au format texte pour le détail d'un point : format des description fait côté back
 - zone d'historique des recherches : stockage dans le localstrore au format Json des paramètres des recheches effectuées
 
