@@ -61,7 +61,7 @@ Stack technique : Eclipse, Java 8, Spring Boot (start Web) avec Maven avec twitt
  
 - exposition de 2 Web Service REST
 ```Java
-	// retourne les points de resultat et leur score
+  // retourne les points de resultat et leur score
 	@CrossOrigin (origins = "*")
 	@RequestMapping (value = "/algofiltre-score", method = RequestMethod.POST)
 	public ResponseEntity<Resultat> buildMapResultScore (
@@ -74,6 +74,10 @@ Stack technique : Eclipse, Java 8, Spring Boot (start Web) avec Maven avec twitt
 	public ResponseEntity<ResultatDetail> getCriteresFromPointIdExtra (@RequestParam int pointId,
 			@RequestBody List<CritereMinimal> cList) throws Exception {
 ```
+- WS /algofiltre-score prend en entrée une liste de critères.  
+De façon générale, un élément de la liste des inputs aura un nom + valeur min en mètre + valeur max en mètre + nombre d'éléments + isMandatory : true/false
+En résultat de l'appel de ce WS, la liste des points (id, lat, lon, score)
+- WS /algofiltre-extra prend en entrée un id de point et retourne la liste des éléments des critères avec pour chacun lat, lon, une description, et la distance en m du point demandé.
 
 - Pas de sécurité mise en oeuvre, l'application tourne et est utilisée en local sur le poste de dev.
 
