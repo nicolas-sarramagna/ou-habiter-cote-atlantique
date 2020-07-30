@@ -47,11 +47,18 @@ On itère les phases 1 et 2 jusqu'à l'obtention d'un fichier de travail satisfa
   - analyser entièrement le code source de la page Web à scraper. En effet, il arrive régulèrement que les données soient directement disponibles sous forme de lien vers un fichier json complet ou que ce dernier soit déclaré dans une variable javscript dans le code Html !
    
 ### Projet Back - services REST
-Stack technique : Eclipse, Java 8, Spring Boot (start Web) avec Maven avec twitter4j + commons-lang/io
-
-Tips, retours d'expérience et conseils en scraping :
-  TODO
-  
+Stack technique : Eclipse, Java 8, Spring Boot (start Web) avec Maven avec twitter4j + commons-lang/io. Pas de bases de données.
+ 
+ - au démarrage de l'application, une phase d'init est opérée pendant laquelle on charge la liste des points possibles (~70k) et tous les éléments des critères (~77k au total). Ces derniers sont stockés par critère, dans 2 TreeMaps, une pour les latitudes des éléments, l'autre pour les longitudes des éléments.
+ - la recherche consiste à itérer sur chaque point possible et sur chaque critère afin de déterminer le nombre d'éléments qui matchent.  
+ Cela permet de calculer le score du point et de déterminer ainsi si l'on conserve ou non le point en résultat de recherche.  
+ En itération sur le critère, on calcule à parti des coordonnées du point en cours de traitement et de la distance maximale souhaité sur ce critère les bordures min et max en lat et lon. On fait l'intersection des éléments récupérés des TreeeMap lat et lon du critère avec ces paramètres de bordures.  
+ De ces coupes *horizontale* (en lat) et *verticale* (en lon), on affine le résultat pour les éléments qui se trouvent aux pointes afin de garantir la distance maximale voulue.  
+ On stoppe prématurément les calculs sur le point en cours :
+  - si un critère désigné comme obligatoire (i.e doit être à 100%) ne l'est pas
+  - si le score courant ne permettra pas d'atteinde le score minimum demandé (respect à mini 80% ou à mini 90% ou à 100% des critères demandés).
+ 
+ 
 - exposition de 2 Web Service REST
 ```Java
 	// retourne les points de resultat et leur score
@@ -67,6 +74,11 @@ Tips, retours d'expérience et conseils en scraping :
 	public ResponseEntity<ResultatDetail> getCriteresFromPointIdExtra (@RequestParam int pointId,
 			@RequestBody List<CritereMinimal> cList) throws Exception {
 ```
+
+- Pas de sécurité mise en oeuvre, l'application tourne et est utilisée en local sur le poste de dev.
+
+
+
 
 ### Projet Front - interface Web
 Stack technique : Eclipse, Html5, CSS, Javasccript avec libs Bootstrap, Jquery, Leaflet + plugins 
