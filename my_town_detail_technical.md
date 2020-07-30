@@ -74,24 +74,30 @@ Stack technique : Eclipse, Java 8, Spring Boot (start Web) avec Maven avec twitt
 	public ResponseEntity<ResultatDetail> getCriteresFromPointIdExtra (@RequestParam int pointId,
 			@RequestBody List<CritereMinimal> cList) throws Exception {
 ```
-- WS /algofiltre-score prend en entrée une liste de critères.  
+- WS /algofiltre-score prend en entrée une liste de critères et le score minimum demandé.  
 De façon générale, un élément de la liste des inputs aura un nom + valeur min en mètre + valeur max en mètre + nombre d'éléments + isMandatory : true/false
 En résultat de l'appel de ce WS, la liste des points (id, lat, lon, score)
 - WS /algofiltre-extra prend en entrée un id de point et retourne la liste des éléments des critères avec pour chacun lat, lon, une description, et la distance en m du point demandé.
 
 - Pas de sécurité mise en oeuvre, l'application tourne et est utilisée en local sur le poste de dev.
 
-
-
-
 ### Projet Front - interface Web
-Stack technique : Eclipse, Html5, CSS, Javasccript avec libs Bootstrap, Jquery, Leaflet + plugins 
+Stack technique : Eclipse, Html5, CSS, Javascript avec libs Bootstrap, Jquery, Leaflet + plugins 
 
 Interface divisée en 4 parties :
-- zone de recherche
-- zone de resulats avec la carte
-- zone de résultats au format texte pour le détail d'un point
-- zone d'historique des recherches
+- zone de recherche : sliers construits avec la lib js [ion.rangeSlider](https://github.com/IonDen/ion.rangeSlider)
 
-Tips, retours d'expérience et conseils en scraping :
-  TODO
+- zone de resulats avec la carte
+	- passage de la map Leaflet en canvas pour un affichage fluide sur beaucoup de points de résultat
+	- utilisation de la lib js pour Leaflet [L.Control.Layers.Tree](https://github.com/jjimenezshaw/Leaflet.Control.Layers.Tree) pour les filtres par critères ou par domaine de critères sur la map
+	TODO screenshot
+	- utilisation de la lib js pour Leaflet [leaflet.icon-material](https://github.com/ilyankou/Leaflet.IconMaterial) pour l'affichage des icônes des éléments
+	TODO screenshot
+	- utilisation de la lib js pour Leaflet [L.Control.ZoomMin](https://github.com/alanshaw/leaflet-zoom-min) pour le bouton supplémentaire sur la map permettant de revenir au zoom global d'un clic
+	- utilisation de la lib js pour Leaflet [leaflet.browser.print](https://github.com/Igor-Vladyka/leaflet.browser.print) pour l'export pdf de la carte
+
+- zone de résultats au format texte pour le détail d'un point : format des description fait côté back
+- zone d'historique des recherches : stockage dans le localstrore au format Json des paramètres des recheches effectuées
+
+- appels à l'api REST via Jquery
+- manipulation de la logique Front avec Jquery et pur Javascript, en ordre d'idée, cela donne moins de 1k lignes de code de JS.
