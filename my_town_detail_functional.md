@@ -34,6 +34,7 @@ Sur un objectif d'achat immobilier, la validation du secteur sur place m'appara�
   - choix du mode de recherche : 
     - recherche stricte : 100% des critères doivent être respectés
     - recherche relachée : au moins 90% ou 80% des critères doivent être respectés. Dans ce mode, il est également possible de spécifier des critères qui doivent être respectés à 100%  
+ - affichage en résultat de recherche du nombre de points, dont ceux qui correspondent à 100%
  - performance en temps de recherche et d'affichage permettant l'affinage des critères par interrogation multiple de la fonction de recherche  
  
 ### Résultats sur la carte
@@ -46,7 +47,13 @@ Sur un objectif d'achat immobilier, la validation du secteur sur place m'appara�
  - possibilité de basculer vers un rendu Google Maps (pour affichage des Points d'Intérêt Maps par ex) et un rendu Google Satellite (pour une meilleure visibilité terrain des points)
 
 ### Détails textuels complémentaires d'un point de résultat
+Sur clic d'un point de la carte,  il est affiché, en correspondant avec les critères choisis :
+- la description des éléments pour chaque critère  
+Ex : nom, prénom et adresse pour les généralistes  
+Ex : nom du magasin et adresse pour les hypermarchés
 
 ### Historique des recherches
-
-
+L'historique des recheches perdure après la fermeture du navigateur, mais pas en suppression d'historique du navigateur (utilisation du localstorage)
+- choix de chargement des paramètres d'une ancienne recherche (choix des critères, paramètres sur les critères, du mode de recherche, ...)
+- suppression ciblée, globale des anciennes recherches
+- affichage des paramètres des anciennes recherches
