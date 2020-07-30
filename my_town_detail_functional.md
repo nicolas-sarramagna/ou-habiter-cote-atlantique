@@ -16,3 +16,7 @@ Domaines :
   
   
   
+Evidemment, tous les critères souhaités ([géorisques](https://www.georisques.gouv.fr/) par exemple) et souhaitables n'ont pas été intégrés.
+
+Des résultats, pour les autres critères non pris en compte, un filtre supplémentaire manuelle sera à effectuer.  
+Sur un objectif d'achat immobilier, la validation du secteur sur place m'apparaît plus que recommandé.
