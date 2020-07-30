@@ -1,7 +1,7 @@
 # ou-habiter-cote-atlantique
 Application Web pour déterminer les zones géographiques préférentielles d’habitation selon critères
 
-# En cours de rédaction au 29/07/2020
+# En cours de rédaction 07/2020
 
 ## Objectif du projet
 L'objectif est de déterminer *finement* sur la carte de France pour les départements 64, 40, 33, 17, 85 et 44 les lieux qui correspondent aux critères sélectionnés.
