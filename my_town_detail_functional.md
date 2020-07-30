@@ -57,3 +57,6 @@ L'historique des recheches perdure après la fermeture du navigateur, mais pas e
 - choix de chargement des paramètres d'une ancienne recherche (choix des critères, paramètres sur les critères, du mode de recherche, ...)
 - suppression ciblée, globale des anciennes recherches
 - affichage des paramètres des anciennes recherches
+
+## Utilisation
+TODO
