@@ -9,11 +9,11 @@ Mon besoin était de déterminer *finement* sur la carte de France pour les dép
 Les résultats correspondent à des points de 500m de diamètre sur un maximum de 30km du bord de côte.
 
 ## Présentation 
-Ce repo a pour but de partager des éléments fonctionnels et techniques de la Web App construite.
+Ce repo a pour but de partager des éléments fonctionnels et techniques (difficultés rencontrées, recommandations, détails de mise en oeuvre) de la Web App construite.
 
 Si vous avez les mêmes besoins, vous aurez un retour d'expérience pour votre mise en oeuvre.
 
-Si vous souhaitez creuser ce sujet, contactez-moi ! :)
+Si vous souhaitez échanger sur ce sujet, [contactez-moi](https://www.linkedin.com/in/nicolas-sarramagna) ! :)
 
 TODO Démo gif ci-dessous :
   1. Sélection des critères
