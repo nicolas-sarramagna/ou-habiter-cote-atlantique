@@ -17,9 +17,19 @@ Zoom sur la carte pour visualiser précisément un ensemble de points :
 ## Présentation 
 Ce repo a pour but de partager des éléments techniques et fonctionnels de la Web App construite.
 
-Démo gif ci-dessous :
+TODO Démo gif ci-dessous :
   1. Sélection des critères
-  2. Sélection du taux de score demandé
+  2. Sélection du taux de score à 90% pour l'exemple
+  3. Affichage des résultats
+  4. Zoom sur un point
+  5. Affichage détail d'un point
+
+## Côté fonctionnel
+35 critères ont été intégrés à date. 
+Evidemment, tous les critères souhaités ([géorisques](https://www.georisques.gouv.fr/) par exemple) et souhaitables n'ont pas été intégrés.
+D'un résultat, un filtre supplémentaire manuelle et de terrains sont à effectuer.
+
+Les détails se trouvents dans le fichier [my_town_detail_functional.md](/my_town_detail_functional.md "détails fonctionnels sur le projet")
 
 ## Côté technique
 3 projets sous Eclipse
@@ -29,11 +39,6 @@ Démo gif ci-dessous :
   
 Les détails se trouvents dans le fichier [my_town_detail_technical.md](/my_town_detail_technical.md "détails techniques sur le projet")
   
-
-## Côté fonctionnel
-35 critères ont été intégrés à date. 
-Evidemment, tous les critères souhaités ([géorisques](https://www.georisques.gouv.fr/) par exemple) et souhaitables n'ont pas été intégrés.
-D'un résultat, un filtre supplémentaire manuelle et de terrains sont à effectuer.
 
 
 
