@@ -1,21 +1,18 @@
 # ou-habiter-cote-atlantique
-Application Web pour déterminer les zones géographiques préférentielles d’habitation selon critères
+Application Web pour déterminer les zones géographiques préférentielles d’habitation selon critères.
 
 # En cours de rédaction 07/2020
 
-## Objectif du projet
-L'objectif est de déterminer *finement* sur la carte de France pour les départements 64, 40, 33, 17, 85 et 44 les lieux qui correspondent aux critères sélectionnés.
+## Objectif
+Mon besoin était de déterminer *finement* sur la carte de France pour les départements 64, 40, 33, 17, 85 et 44 les lieux qui correspondent à des critères sélectionnés.
 Les résultats correspondent à des points de 500m de diamètre sur un maximum de 30km du bord de côte.
 
-Ainsi, il convient de déterminer, des ~ 67000 points de la carte prénsentée ci-dessous, quels sont ceux qui correpondent le mieux à mes critères.
-
-![image of the map all points](/screenshots/screenshot_map_all_points.png "Map avec tous les points de la carte")
-
-Zoom sur la carte pour visualiser précisément un ensemble de points :
-![image of the map all points](/screenshots/screenshot_map_all_points_detail_example.png "Zoom sur la map des points de résultat")
-
 ## Présentation 
-Ce repo a pour but de partager des éléments techniques et fonctionnels de la Web App construite.
+Ce repo a pour but de partager des éléments fonctionnels et techniques de la Web App construite.
+
+Si vous avez les mêmes besoins, vous aurez un retour d'expérience pour votre mise en oeuvre.
+
+Si vous souhaitez creuser ce sujet, contactez-moi ! :)
 
 TODO Démo gif ci-dessous :
   1. Sélection des critères
@@ -27,7 +24,8 @@ TODO Démo gif ci-dessous :
 ## Côté fonctionnel
 35 critères ont été intégrés à date. 
 Evidemment, tous les critères souhaités ([géorisques](https://www.georisques.gouv.fr/) par exemple) et souhaitables n'ont pas été intégrés.
-D'un résultat, un filtre supplémentaire manuelle et de terrains sont à effectuer.
+Des résultats, pour les autres critères non pris en compte, un filtre supplémentaire manuelle sera à effectuer.
+Sur un objectif d'achat immobilier, la validation du secteur sur place m'apparaît plus que recommandé.
 
 Les détails se trouvents dans le fichier [my_town_detail_functional.md](/my_town_detail_functional.md "détails fonctionnels sur le projet")
 
