@@ -49,9 +49,9 @@ On itère les phases 1 et 2 jusqu'à l'obtention d'un fichier de travail satisfa
   - certains sites bloquent tout robot, passer alors par une sauvegarde html via le navigateur. Automatiser (via plugin navigateur ad-hoc) ou pas (selon votre estimation de ROI) en variabilisant le tout si le site le permet. Parser ensuite les fichiers avec jsoup pour l'extraction des données.
    
 ### Projet Back - services REST
-Stack technique : Eclipse, Java 8, Spring Boot (start Web) avec Maven avec twitter4j + commons-lang/io. Pas de bases de données.
+Stack technique : Eclipse, Java 8, Spring Boot (starter Web) avec Maven et twitter4j + commons-lang/io. Pas de base de données.
  
- - au démarrage de l'application, une phase d'init est opérée pendant laquelle on charge la liste des points possibles (~70k) et tous les éléments des critères (~77k au total). Ces derniers sont stockés par critère, dans 2 TreeMaps, une pour les latitudes des éléments, l'autre pour les longitudes des éléments.
+ - au démarrage de l'application, une phase d'init est opérée pendant laquelle on charge la liste des points possibles (~67k) et tous les éléments des critères (~77k au total). Ces derniers sont stockés, *par critère*, dans 2 TreeMaps, une pour les latitudes des éléments, l'autre pour les longitudes des éléments.
  - la recherche consiste à itérer sur chaque point possible et sur chaque critère afin de déterminer le nombre d'éléments qui matchent.  
  Cela permet de calculer le score du point et de déterminer ainsi si l'on conserve ou non le point en résultat de recherche.  
  En itération sur le critère, on calcule à parti des coordonnées du point en cours de traitement et de la distance maximale souhaité sur ce critère les bordures min et max en lat et lon. On fait l'intersection des éléments récupérés des TreeeMap lat et lon du critère avec ces paramètres de bordures.  
