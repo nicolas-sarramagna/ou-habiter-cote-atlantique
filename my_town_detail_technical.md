@@ -14,10 +14,11 @@ Ainsi, certaines US n'ont pas été prises car :
  
 ### Mise en service
 L'application Web se démarre sous Eclipse avec une config de JVM par défaut, issue du .ini :
-  -XX:MaxPermSize=256m
-  -Xms256m
-  -Xmx1024m
-et tourne sur un pc portable personnel, pas d'exigences matérielles spécifiques.
+ - XX:MaxPermSize=256m
+ - Xms256m
+ - Xmx1024m
+ 
+et tourne sur un pc portable personnel, sans exigences matérielles spécifiques.
 
 ### Projet Source
 Stack technique : Eclipse, Java, principales libs : scraping avec Jsoup et de quoi manipuler du json : jackson, twitter4j + commons-lang/io
