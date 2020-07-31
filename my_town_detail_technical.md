@@ -68,7 +68,7 @@ Stack technique : Eclipse, Java 8, Spring Boot (starter Web) avec Maven et twitt
  - au démarrage de l'application, une phase d'init est opérée pendant laquelle on charge la liste des points possibles (~67k) et tous les éléments des critères (~77k au total). On construit, *par critère*, 2 TreeMaps, une pour les latitudes des éléments, l'autre pour les longitudes des éléments.
  - de facon générale, la recherche consiste à itérer sur chaque point possible et sur chaque critère afin de déterminer le nombre d'éléments qui matchent.  
  Cela permet de calculer le score du point et de déterminer ainsi si l'on conserve ou non le point en résultat de recherche.  
- En itération sur le critère, on calcule à partir des coordonnées du point en cours de traitement et de la distance maximale souhaitée sur ce critère les bordures min et max en lat et lon. Attention, on n'est pas en coordonnées euclidiennes, et un degré de longitude dépende de la valeur de la latitude courante.  
+ En itération sur le critère, on calcule à partir des coordonnées du point en cours de traitement et de la distance maximale souhaitée sur ce critère les bordures min et max en lat et lon. Attention, on n'est pas en coordonnées euclidiennes, et un degré de longitude dépend de la valeur de la latitude du point courant.  
  On fait ensuite l'intersection des éléments récupérés des TreeeMap lat et lon du critère avec ces paramètres de bordures.  
  De ces coupes *horizontale* (en lat) et *verticale* (en lon), on affine le résultat, notamment pour les éléments  qui se trouvent aux pointes afin de garantir la distance maximale voulue et pour garantir la distance minimale demnandée.  
  On stoppe prématurément les calculs sur le point en cours :  
