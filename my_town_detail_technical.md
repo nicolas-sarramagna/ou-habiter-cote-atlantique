@@ -104,8 +104,6 @@ Stack technique : Eclipse, Html5, CSS, Javascript avec libs Bootstrap, Jquery, L
 Interface divisée en 4 parties, cf copie d'écran ci-dessous scalée à 80% pour bien voir les 4 zones :
 ![image of the interface 4 zones](/screenshots/screenshot_map_4_zones_80.png "Interface avec les 4 zones")
 
-- zone de recherche : sliders construits avec la lib js [ion.rangeSlider](https://github.com/IonDen/ion.rangeSlider)
-
 - zone de résulats avec la carte
 	- passage de la map Leaflet en canvas pour un affichage fluide sur beaucoup de points de résultat
 	- utilisation de la lib js pour Leaflet [L.Control.Layers.Tree](https://github.com/jjimenezshaw/Leaflet.Control.Layers.Tree) pour les filtres par critères ou par domaine de critères sur la map
@@ -115,7 +113,11 @@ Interface divisée en 4 parties, cf copie d'écran ci-dessous scalée à 80% pou
 	- positionnement du score dans les markers Leaflet, lors d'une recherche avec score < 100% permis, que pour un nombre de résultats < 1000 sinon performance d'interaction dégradée ; utilisation du bindTooltip à améliorer (la MR Leaflet suivante [https://github.com/Leaflet/Leaflet/issues/6734)](https://github.com/Leaflet/Leaflet/issues/6734) pourrait aider).
 	
 - zone de résultats au format texte pour le détail d'un point : format des description fait côté back
+
+- zone de recherche : sliders construits avec la lib js [ion.rangeSlider](https://github.com/IonDen/ion.rangeSlider)
+
 - zone d'historique des recherches : stockage dans le localstrore au format Json des paramètres des recheches effectuées
 
 - appels à l'api REST via Jquery
+
 - manipulation de la logique Front avec Jquery et pur Javascript, en ordre d'idée, cela donne ~850 lignes de code JS, commentaires et indentation comprises.
