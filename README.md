@@ -15,13 +15,30 @@ Si vous avez les mêmes besoins, vous aurez un retour d'expérience pour votre m
 
 Si vous souhaitez échanger sur ce sujet, [contactez-moi](https://www.linkedin.com/in/nicolas-sarramagna) ! :)
 
-TODO Démo gif ci-dessous :
-  1. Sélection des critères
-  2. Sélection du taux de score à 90% pour l'exemple
-  3. Affichage des résultats
-  4. Zoom sur un point
-  5. Affichage détail d'un point
+Déroulé de la Démo gif ci-dessous :
 
+TODO lien gif
+
+Cette démo présente les éléments suivants :
+1. recherche sur respect à 100% des critères :
+  - présentation de criteres disponibles
+  - actions possibles sur les critères
+  - chargement d'une ancienne recherche
+  - modidications sur les critères
+  - lancement de la recherche
+  - clic sur un point de résultat
+  - présentation d'icônes affichés
+  - présentation de la partie textuelle d'un point de résultat
+  - changement des paramètres d'affichage (carte + texte) du nombre d'éléments d'un point de résultat
+  - clic retour vision large de la carte
+  - changement du paramètrè de présence des éléments sur la carte
+  - clic sur un autre point de résultat
+2. recherche avec respect minimal de 80% des critères
+  - lancement de la recherche
+  - clic sur un point de score < 100%
+  - présentation des éléments textuels non matchés
+  - clic sur export de la carte
+      
 ## Côté fonctionnel
 35 critères ont été intégrés à date. 
 
