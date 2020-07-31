@@ -32,10 +32,10 @@ Sur un objectif d'achat immobilier, la validation du secteur sur place m'appara�
   - choix pour chaque critère du nombre d'éléments voulus  
   Ex : 2 boulangeries à moins de 800m
   - choix du mode de recherche : 
-    - recherche stricte : 100% des critères doivent être respectés
-    - recherche relachée : au moins 90% ou 80% des critères doivent être respectés. Dans ce mode, il est également possible de spécifier des critères qui doivent être respectés à 100%  
+    - recherche *stricte* : 100% des critères doivent être respectés
+    - recherche *relachée* : au moins 90% ou 80% des critères doivent être respectés. Dans ce mode, il est également possible de spécifier des critères qui doivent être respectés à 100%  
  - affichage du nombre de points de résultat, dont ceux qui correspondent à 100%
- - affichage sur la carte directement dans le point du score (affichage effectif selon le nombre total de points sinon problème de performance)
+ - lors d'une recherche *relachée*, affichage du score directement dans le point (affichage effectif selon le nombre total de points sinon problème de performance)
  - couleur différenciée en dégradé des points de la carte pour visualiser rapidement les différences de score des points
  - performance en temps de recherche et d'affichage permettant l'affinage des critères par interrogation multiple de la fonction de recherche
  
