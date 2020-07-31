@@ -15,30 +15,20 @@ Si vous avez les mêmes besoins, vous aurez un retour d'expérience pour votre m
 
 Si vous souhaitez échanger sur ce sujet, [contactez-moi](https://www.linkedin.com/in/nicolas-sarramagna) ! :)
 
-Déroulé de la Démo gif ci-dessous :
+Voici quelques démos gif ci-dessous :
 
-TODO lien gif
+1. Actions possibles sur les critères et recherche  
+    
+2. Interactions sur la carte partie 1/3 - vision globae, détail d'un point  
 
-Cette démo présente les éléments suivants :
-1. recherche sur respect à 100% des critères :
-  - présentation de criteres disponibles
-  - actions possibles sur les critères
-  - chargement d'une ancienne recherche
-  - modidications sur les critères
-  - lancement de la recherche
-  - clic sur un point de résultat
-  - présentation d'icônes affichés
-  - présentation de la partie textuelle d'un point de résultat
-  - changement des paramètres d'affichage (carte + texte) du nombre d'éléments d'un point de résultat
-  - clic retour vision large de la carte
-  - changement du paramètre de présence des éléments sur la carte
-  - clic sur un autre point de résultat
-2. recherche avec respect minimal de 80% des critères
-  - lancement de la recherche
-  - clic sur un point de score < 100%
-  - présentation des éléments textuels non matchés
-  - clic sur export de la carte
-      
+3. Interaction sur la carte partie 2/3 - options d'affichage sur les éléments  
+
+3. Interactions sur la carte partie 3/3 - fonds de carte, export
+
+4. Partie textuelle d'un point de résultat - paramétrage, identification de critères non matchés
+
+5. Manipulation de l'historique
+
 ## Côté fonctionnel
 35 critères ont été intégrés à date. 
 
