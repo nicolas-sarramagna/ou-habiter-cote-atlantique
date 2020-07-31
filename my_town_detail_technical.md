@@ -4,13 +4,15 @@ La construction s'est faite à partir d'un backlog initial, centré sur les US p
 - un principe de recherche efficient et efficace avec une première implémentation 
 - un carte des points visuellement exploitable
 
+En effort global, on est sur une répartition de l'ordre d'environ 70% sur la partie 'Source', ~10% pour la partie back et ~20% sur la partie front.
+TODO a finir
 La construction itérative a fait émerger de nouveaux besoins et de nouvelles idées dont certains n'ont pas été implémentés ou intégrés à la solution.
-
-En effet, la cible était de disposer d'un App opérationnelle permettant de donner des résultats concrets suffisamment pertinents et exploitables.  
-Ainsi, certaines US n'ont pas été prises car :
+Certaines US n'ont pas été prises car :
  - elles avaitent une faible Businness Value ou
  - l'effort de mise en oeuvre et/ou d'intégration était jugé trop important (même si la BV était importante, ex [géorisques](https://www.georisques.gouv.fr/)) ou
  - les données étaient indisponibles, incomplètes ou demandaient trop d'effort de collecte/analyse/de mise en forme voire de création (ex carte de bruits)
+ - l'objectif 1er de disposer d'un App opérationnelle permettant de donner des résultats concrets suffisamment pertinents et exploitables n'était pas encore atteint.
+ Et une fois ce dernier atteint, elles ont été déclassées
  
 ### Mise en service
 L'application Web se démarre sous Eclipse avec une config de JVM par défaut, issue du .ini :
