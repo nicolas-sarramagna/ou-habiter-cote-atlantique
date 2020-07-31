@@ -29,17 +29,18 @@ Sur un objectif d'achat immobilier, la validation du secteur sur place m'appara�
 ### Recherche
   - sélection des critères à utiliser en recherche  
   Ex : boulangerie
-  - choix pour chaque critère de la distance maximale (intervalle de distance possible prédéfini dans le fichier html)    
+  - choix pour chaque critère des distances maximales et minimales (intervalle de distance prédéfini partie Front)    
   Ex : boulangerie à moins de 800m
   - choix pour chaque critère du nombre d'éléments voulus  
   Ex : 2 boulangeries à moins de 800m
   - choix du mode de recherche : 
     - recherche *stricte* : 100% des critères doivent être respectés
-    - recherche *relachée* : au moins 90% ou 80% des critères doivent être respectés. Dans ce mode, il est également possible de spécifier des critères qui doivent être respectés à 100%  
- - affichage du nombre de points de résultat, dont ceux qui correspondent à 100%
- - lors d'une recherche *relachée*, affichage du score directement dans le point (affichage effectif selon le nombre total de points sinon problème de performance)
- - couleur différenciée en dégradé des points de la carte pour visualiser rapidement les différences de score des points
- - performance en temps de recherche et d'affichage permettant l'affinage des critères par interrogation multiple de la fonction de recherche
+    - recherche *relachée* : au moins 90% ou 80% des critères doivent être respectés. Dans ce mode, il est également possible de spécifier des critères qui doivent être respectés à 100% 
+  - performance en temps de recherche et d'affichage permettant l'affinage des critères par interrogation multiple de la fonction de recherche
+  - affichage du nombre de points de résultat, dont ceux qui correspondent à 100%
+  - couleur différenciée en dégradé des points de la carte pour visualiser rapidement les différences de score des points
+  - lors d'une recherche *relachée*, affichage du score directement dans le point (affichage effectif selon le nombre total de points sinon problème de performance)
+ 
  
 ### Résultats sur la carte
  - positionnement de l'affichage permettant une visualisation globale des résultats
