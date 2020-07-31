@@ -1,6 +1,6 @@
 ## Contexte
 
-Il convient de déterminer des ~ 67000 points de la carte prénsentée ci-dessous, quels sont ceux qui correpondent le mieux aux critères choisis.
+Il convient de déterminer des ~ 67000 points de la carte présentée ci-dessous, quels sont ceux qui correpondent le mieux aux critères choisis.
 
 ![image of the map all points](/screenshots/screenshot_map_all_points.png "Map avec tous les points de la carte")
 
