@@ -62,10 +62,6 @@ Ex : nom du magasin et adresse pour les hypermarchés
 - affichage des paramètres des anciennes recherches
 
 ## Utilisation
-
-L'application Web se démarre sous Eclipse (par ex) avec une config de JVM par défaut, issue du .ini :
-  -XX:MaxPermSize=256m
-  -Xms256m
-  -Xmx1024m
-et tourne sur un pc portable personnel.
+L'application Web est démarrée et s'utilise, via un navigateur Web tel que Chrome, sur le pc portable du développeur.
+Pas d'exigences matérielles spécifiques.
 
