@@ -47,7 +47,17 @@ On itère les phases 1 et 2 jusqu'à l'obtention d'un fichier de travail satisfa
   - ne pas oublier l'open data qui donne directement les données sous un format, normalement directement exploitable.
   - analyser entièrement le code source de la page Web à scraper. En effet, il arrive régulèrement que les données recherchées soient directement disponibles sous forme de lien vers un fichier json complet ou que ce dernier soit déclaré dans une variable javscript dans le code Html !
   - certains sites bloquent tout robot, passer alors par une sauvegarde html via le navigateur. Automatiser (via plugin navigateur ad-hoc) ou pas (selon votre estimation de ROI) en variabilisant le tout si le site le permet. Parser ensuite les fichiers avec jsoup pour l'extraction des données.
-   
+  
+  ### Les sources de données
+    Loisirs : plage, cinéma, piscine, médiathèque, salle de sport
+    Santé : pédiatre, généraliste, pharmacie, gynécologue, hopital, maternité (de niveau 3 dans le cadre du projet), dermatologue, ophtalmologue
+    Education : maternelle, primaire, collège, lycée, études supérieures
+    Services de proximité : bureau de poste, agence Société Générale (contexte projet), marché, supermarché (carrefour city et contact, petit casino, 8 à 8, monoprix, simply market, spar, vival)
+    Services : hypermarché (auchan, carrefour, carrefour market, geant casino, intermarche, leclerc, super casino, super u), bricolage (brico depot, bricomarche, bricorama, castorama, leroy merlin), Décathlon, ameublement (but, conforama, la cas, ikea), Ikea (critère spécifique bien que déjà compris dans le critère ameublement, critère Ikea créé pour le contexte de ma recherche), culture (fnac, cultura)
+    Transports : aéroport, gare
+    Immobilier : prix/m2 et anciennes ventes avec prix actualisé, données issues de Etalab, base DVF notamment
+
+  
 ### Projet Back - services REST
 Stack technique : Eclipse, Java 8, Spring Boot (starter Web) avec Maven et twitter4j + commons-lang/io. Pas de base de données.
  
