@@ -54,11 +54,11 @@ On itère les phases 1 et 2 jusqu'à l'obtention d'un fichier de travail satisfa
   
   #### Les sources de données, indications
   - Loisirs : plage : [bathing water directive status](https://www.eea.europa.eu/data-and-maps/data/bathing-water-directive-status-of-bathing-water-12), cinéma : [annuaire allocine](http://www.allocine.fr/salle/), médiathèque : [annuaire mairie](https://www.annuaire-mairie.fr/bibliotheque.html)
-  - Santé : après travaux sur les données de l'annuaire d'Ameli et les données [data.gouv.fr, annuaire santé de la Cnam](https://www.data.gouv.fr/fr/datasets/annuaire-sante-de-la-cnam/), j'ai noté (avec Maps + doctolib) qu'on était loin d'avoir l'exhaustivité des professionnels de santé. Je recommande plutôt l'annuaire du [conseil national de l'Odre des médecins](https://www.conseil-national.medecin.fr/annuaire)  
-  - Education : data.gouv.fr et data.education.gouv.fr
-  - Services de proximité : bureau de poste, agence Société Générale (contexte projet), marché, supermarché : sites des magasins principalement
+  - Santé : après travaux sur les données de l'annuaire d'Ameli et les données de l'[annuaire santé de la Cnam](https://www.data.gouv.fr/fr/datasets/annuaire-sante-de-la-cnam/), j'ai noté (avec Maps + doctolib) qu'on était loin d'avoir l'exhaustivité des professionnels de santé. Je recommande plutôt l'annuaire du [conseil national de l'Odre des médecins](https://www.conseil-national.medecin.fr/annuaire)  
+  - Education : données de data.gouv.fr et data.education.gouv.fr, notamment
+  - Services de proximité : bureau de poste : [dataNOVA](https://datanova.laposte.fr/page/accueil/), agences SG : site de la banque, supermarché : sites des magasins, principalement
   - Services : sites des magasins
-  - Transports : aéroport, gare
+  - Transports : aéroport : [aeroport.fr](https://www.aeroport.fr/les-aeroports-de-l-uaf), gare [SNCF open data](https://ressources.data.sncf.com/explore/dataset/liste-des-gares/table/)
   - Immobilier : Etalab, [base DVF](https://www.data.gouv.fr/fr/datasets/demandes-de-valeurs-foncieres-geolocalisees), notamment
 
   
