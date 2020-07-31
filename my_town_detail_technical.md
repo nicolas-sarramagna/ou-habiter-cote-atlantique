@@ -87,7 +87,7 @@ En résultat de l'appel de ce WS, la liste des points (id, lat, lon, score)
 Stack technique : Eclipse, Html5, CSS, Javascript avec libs Bootstrap, Jquery, Leaflet + plugins 
 
 Interface divisée en 4 parties :
-- zone de recherche : sliers construits avec la lib js [ion.rangeSlider](https://github.com/IonDen/ion.rangeSlider)
+- zone de recherche : sliders construits avec la lib js [ion.rangeSlider](https://github.com/IonDen/ion.rangeSlider)
 
 - zone de resulats avec la carte
 	- passage de la map Leaflet en canvas pour un affichage fluide sur beaucoup de points de résultat
