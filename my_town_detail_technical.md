@@ -17,9 +17,10 @@ et tourne sur un pc portable personnel, sans exigences matérielles spécifiques
 ### Projet Source
 Stack technique : Eclipse, Java, principales libs : scraping avec Jsoup et de quoi manipuler du json : jackson, twitter4j + commons-lang/io
 
-En terme d'organisation projet, je suis sur un package par critère avec un *main* qui sort un fichier csv pour le critère à intégrer dans la WebApp
+En terme d'organisation projet, je suis sur un package par critère (+ quelques packages utilitaires et common).  
+De manière générale, le package comprend un fichier Java avec un *main*  qui aboutit à la création du fichier csv pour ce critère, fichier qui sera un des inputs en init de la WebApp.
 
-Le process général d'un *main* pour un critère est :
+Le process général de scraping pour un critère est :
  - phase 1 : scraping i.e récupération brute des données
  - phase 2 : extraction des données et écriture dans un fichier csv de travail dédié  
 On itère les phases 1 et 2 jusqu'à l'obtention d'un fichier de travail satisfaisant.
