@@ -103,4 +103,4 @@ Interface divisée en 4 parties :
 - zone d'historique des recherches : stockage dans le localstrore au format Json des paramètres des recheches effectuées
 
 - appels à l'api REST via Jquery
-- manipulation de la logique Front avec Jquery et pur Javascript, en ordre d'idée, cela donne ~850 lignes de code JS, commentaires, indentation comprises.
+- manipulation de la logique Front avec Jquery et pur Javascript, en ordre d'idée, cela donne ~850 lignes de code JS, commentaires et indentation comprises.
