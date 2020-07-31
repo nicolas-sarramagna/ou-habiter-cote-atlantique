@@ -63,5 +63,5 @@ Ex : nom du magasin et adresse pour les hypermarchés
 
 ## Utilisation
 L'application Web est démarrée et s'utilise, via un navigateur Web tel que Chrome, sur le pc portable du développeur.
-Pas d'exigences matérielles spécifiques.
+
 
