@@ -1,11 +1,13 @@
-## Contexte et objectif
+## Objectif
 
-Il convient de déterminer des ~ 67000 points de la carte présentée ci-dessous, quels sont ceux qui correpondent le mieux aux critères choisis.
+Il s'agit de déterminer des ~ 67000 points de la carte présentée ci-dessous, quels sont ceux qui correpondent le mieux aux critères choisis.
 
 ![image of the map all points](/screenshots/screenshot_map_all_points.png "Map avec tous les points de la carte")
 
 Zoom sur la carte pour visualiser précisément un ensemble de points :
 ![image of the map all points](/screenshots/screenshot_map_all_points_detail_example2.png "Zoom sur la map des points de résultat")
+
+L'objectif global est de disposer d'une application permettant de donner des résultats concrets suffisamment pertinents et exploitables.
 
 ## Critères mis en place
 
