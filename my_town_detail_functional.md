@@ -69,4 +69,3 @@ L'application Web se démarre sous Eclipse (par ex) avec une config de JVM par d
   -Xmx1024m
 et tourne sur un pc portable personnel.
 
-TODO gif supplémentaires
