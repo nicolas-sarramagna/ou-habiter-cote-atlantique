@@ -73,21 +73,21 @@ Stack technique : Eclipse, Java 8, Spring Boot (starter Web) avec Maven et twitt
  
 - exposition de 2 Web Service REST
 ```Java
-  // retourne les points de resultat et leur score
-	@CrossOrigin (origins = "*")
-	@RequestMapping (value = "/algofiltre-score", method = RequestMethod.POST)
-	public ResponseEntity<Resultat> buildMapResultScore (
+// retourne les points de resultat et leur score
+@CrossOrigin (origins = "*")
+@RequestMapping (value = "/algofiltre-score", method = RequestMethod.POST)
+public ResponseEntity<Resultat> buildMapResultScore (
 			@RequestParam (value = "scoreMini", required = false, defaultValue = "100") int scoreMini,
 			@RequestBody List<CritereMinimal> cList) throws Exception {
 ```
 Le WS **/algofiltre-score** prend en entrée une liste de critères et le score minimum demandé.  
 De façon générale, un élément de la liste des inputs aura un nom + valeur min en mètre + valeur max en mètre + nombre d'éléments + isMandatory : true/false.    
 Ce WS retourne la liste des points avec id, lat, lon et score.
-```
-  // retourne les elements pour un point
-	@CrossOrigin (origins = "*")
-	@RequestMapping (value = "/algodetail-extra", method = RequestMethod.POST)
-	public ResponseEntity<ResultatDetail> getCriteresFromPointIdExtra (@RequestParam int pointId,
+```Java
+// retourne les elements pour un point
+@CrossOrigin (origins = "*")
+@RequestMapping (value = "/algodetail-extra", method = RequestMethod.POST)
+public ResponseEntity<ResultatDetail> getCriteresFromPointIdExtra (@RequestParam int pointId,
 			@RequestBody List<CritereMinimal> cList) throws Exception {
 ```
 Le WS **/algofiltre-extra** prend en entrée un id de point et retourne la liste des éléments des critères avec pour chacun lat, lon, une description, et la distance en m vis à vis du point.
