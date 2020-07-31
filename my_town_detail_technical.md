@@ -12,6 +12,12 @@ Ainsi, certaines US n'ont pas été prises car :
  - l'effort de mise en oeuvre et/ou d'intégration était jugé trop important (même si la BV était importante, ex [géorisques](https://www.georisques.gouv.fr/)) ou
  - les données étaient indisponibles, incomplètes ou demandaient trop d'effort de collecte/analyse/de mise en forme voire de création (ex carte de bruits)
  
+### Mise en service
+L'application Web se démarre sous Eclipse avec une config de JVM par défaut, issue du .ini :
+  -XX:MaxPermSize=256m
+  -Xms256m
+  -Xmx1024m
+et tourne sur un pc portable personnel, pas d'exigences matérielles spécifiques.
 
 ### Projet Source
 Stack technique : Eclipse, Java, principales libs : scraping avec Jsoup et de quoi manipuler du json : jackson, twitter4j + commons-lang/io
