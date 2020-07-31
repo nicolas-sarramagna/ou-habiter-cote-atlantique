@@ -64,4 +64,4 @@ Ex : nom du magasin et adresse pour les hypermarchés
 ## Utilisation
 L'application Web est démarrée et s'utilise, via un navigateur Web tel que Chrome, sur le pc portable du développeur.
 
-
+Côté technique, c'est sur ce lien : [my_town_detail_technical.md](/my_town_detail_technical.md "détails techniques sur le projet")
