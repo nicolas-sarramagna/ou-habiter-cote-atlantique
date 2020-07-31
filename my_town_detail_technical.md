@@ -46,7 +46,7 @@ On itère les phases 1 et 2 jusqu'à l'obtention d'un fichier de travail satisfa
   - rajouter en header un user-agent usuel de navigateur/tablette/smartphone et le referrer utilisé sur le site constituent une bonne pratique
   - ne pas oublier l'open data qui donne directement les données sous un format, normalement directement exploitable.
   - analyser entièrement le code source de la page Web à scraper. En effet, il arrive régulèrement que les données recherchées soient directement disponibles sous forme de lien vers un fichier json complet ou que ce dernier soit déclaré dans une variable javscript dans le code Html !
-  - certains sites bloquent tout robot, passer alors par une sauvegarde html via le navigateur, automatiser (via plugin navigateur ad-hoc) en variabilisant le tout si le site le permet. Parser ensuite les fichiers avec jsoup pour l'extraction des données.
+  - certains sites bloquent tout robot, passer alors par une sauvegarde html via le navigateur. Selon votre estimation de ROI, automatiser ou pas (via plugin navigateur ad-hoc) en variabilisant le tout si le site le permet. Parser ensuite les fichiers avec jsoup pour l'extraction des données.
    
 ### Projet Back - services REST
 Stack technique : Eclipse, Java 8, Spring Boot (start Web) avec Maven avec twitter4j + commons-lang/io. Pas de bases de données.
