@@ -20,7 +20,7 @@ Voici quelques démos gif ci-dessous :
 1. Actions possibles sur les critères et recherche  
     ![demo critere recherche](/demos/01_demo_critere_recherche.gif)
 2. Interactions sur la carte partie 1/3 - vision globae, détail d'un point  
-
+    ![demo critere recherche](/demos/02_demo_globale_point.gif)
 3. Interaction sur la carte partie 2/3 - options d'affichage sur les éléments  
 
 3. Interactions sur la carte partie 3/3 - fonds de carte, export
