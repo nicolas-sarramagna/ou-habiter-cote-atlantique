@@ -79,17 +79,18 @@ Stack technique : Eclipse, Java 8, Spring Boot (starter Web) avec Maven et twitt
 	public ResponseEntity<Resultat> buildMapResultScore (
 			@RequestParam (value = "scoreMini", required = false, defaultValue = "100") int scoreMini,
 			@RequestBody List<CritereMinimal> cList) throws Exception {
-      
+```
+Le WS **/algofiltre-score** prend en entrée une liste de critères et le score minimum demandé.  
+De façon générale, un élément de la liste des inputs aura un nom + valeur min en mètre + valeur max en mètre + nombre d'éléments + isMandatory : true/false.    
+Ce WS retourne la liste des points avec id, lat, lon et score.
+```
   // retourne les elements pour un point
 	@CrossOrigin (origins = "*")
 	@RequestMapping (value = "/algodetail-extra", method = RequestMethod.POST)
 	public ResponseEntity<ResultatDetail> getCriteresFromPointIdExtra (@RequestParam int pointId,
 			@RequestBody List<CritereMinimal> cList) throws Exception {
 ```
-- WS /algofiltre-score prend en entrée une liste de critères et le score minimum demandé.  
-De façon générale, un élément de la liste des inputs aura un nom + valeur min en mètre + valeur max en mètre + nombre d'éléments + isMandatory : true/false
-En résultat de l'appel de ce WS, la liste des points (id, lat, lon, score)
-- WS /algofiltre-extra prend en entrée un id de point et retourne la liste des éléments des critères avec pour chacun lat, lon, une description, et la distance en m du point demandé.
+Le WS **/algofiltre-extra** prend en entrée un id de point et retourne la liste des éléments des critères avec pour chacun lat, lon, une description, et la distance en m vis à vis du point.
 
 - Pas de sécurité mise en oeuvre, l'application tourne et est utilisée en local sur le poste de dev.
 
