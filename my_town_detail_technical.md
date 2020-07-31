@@ -106,9 +106,7 @@ Interface divisée en 4 parties :
 - zone de résulats avec la carte
 	- passage de la map Leaflet en canvas pour un affichage fluide sur beaucoup de points de résultat
 	- utilisation de la lib js pour Leaflet [L.Control.Layers.Tree](https://github.com/jjimenezshaw/Leaflet.Control.Layers.Tree) pour les filtres par critères ou par domaine de critères sur la map
-	TODO screenshot
 	- utilisation de la lib js pour Leaflet [leaflet.icon-material](https://github.com/ilyankou/Leaflet.IconMaterial) pour l'affichage des icônes des éléments
-	TODO screenshot
 	- utilisation de la lib js pour Leaflet [L.Control.ZoomMin](https://github.com/alanshaw/leaflet-zoom-min) pour le bouton supplémentaire sur la map permettant de revenir au zoom global d'un clic
 	- utilisation de la lib js pour Leaflet [leaflet.browser.print](https://github.com/Igor-Vladyka/leaflet.browser.print) pour l'export pdf de la carte
 	- positionnement du score dans les markers Leaflet, lors d'une recherche avec score < 100% permis, que pour un nombre de résultats < 1000 sinon performance d'interaction dégradée ; utilisation du bindTooltip à améliorer (la MR Leaflet suivante [https://github.com/Leaflet/Leaflet/issues/6734)](https://github.com/Leaflet/Leaflet/issues/6734) pourrait aider).
