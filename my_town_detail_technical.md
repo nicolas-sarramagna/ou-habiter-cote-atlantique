@@ -20,22 +20,21 @@ Stack technique : Eclipse, Java, principales libs : scraping avec Jsoup et de qu
 En terme d'organisation projet, je suis sur un package par critère (+ quelques packages utilitaires et common).  
 De manière générale, le package comprend un fichier Java avec un *main*  qui aboutit à la création du fichier csv pour ce critère, fichier qui sera un des inputs en init de la WebApp.
 
-Le process général de scraping pour un critère est :
+Le processus général de scraping pour un critère est :
  - phase 1 : scraping i.e récupération brute des données
  - phase 2 : extraction des données et écriture dans un fichier csv de travail dédié  
 On itère les phases 1 et 2 jusqu'à l'obtention d'un fichier de travail satisfaisant.
- - phase 3 : alimentation des latitudes et longitudes non renseignées, par appel d'API Maps (api OpenStreeetMap bien moins efficace) ou à la main en cas d'échec (vérification Google + recherche manuelle dans Maps).  
- Il arrive également qu'à cette phase l'on fasse des corrections manuelles d'adresse.  
+ - phase 3 : alimentation des latitudes et longitudes non renseignées, par appel de l'API Maps (l'API OpenStreeetMap est bien moins efficace) ou à la main en cas d'échec (vérification de l'adresse du lieu sur Google + recherche manuelle dans Maps puis clic droit > *plus d'infos sur cet endroit*).  
  On écrit en sortie dans un nouveau fichier csv qui sera celui cible.
  On itère la phase 3 jusqu'au remplissage complet des latitudes et des longitudes.
   - phase 4 : vérification programmatique des latitudes et des longitudes : bornes min et max considérées comme acceptable sinon un Warning pour analyse manuelle est levé  
   - phase 5 : génération des éléments collectées sur une carte OpenStreetMap statique dans un fichier Html pour vérification visuelle de présence et de dispersion des points.  
- En cas de Warning de la phase 4, le point apparaît en général fortement hors du périmètre courant, l'appel API de récupération des lat/lon n'a pas été pertinent, il faut alors redresser les données à la main avec Google + Google Maps.  
+ En cas de Warning levé en phase 4, le point apparaît en général sur la carte fortement hors du périmètre courant, l'appel API de récupération des lat/lon n'a pas été pertinent, il faut alors redresser les données à la main avec Google + Google Maps.  
  En phase 5, si en analyse visuelle on voit, par exemple, très peu de médecins généralistes en Vendée, il faut vérifier si c'est réellement le cas ou si on n'a pas un raté sur la phase de collecte ou si la source est incomplète.  
  On itère les phases 4 et 5 pour n'avoir aucun Warning (phase 4) et une analyse Métier satisfaisante (phase 5).    
- A ce stade, on dispose du fichier de sortie cvs qui servira d'input en partie Back de la Web App.  
+ En fin de processus, on dispose du fichier de sortie cvs qui servira d'input en partie Back de la Web App.  
  
- Ce dernier comprend globalement les colonnes suivantes : 
+ Ce fichier csv final comprend globalement les colonnes suivantes : 
   - département
   - nom du site ou nom et prénom d'un professionel de santé
   - adresse
@@ -51,7 +50,7 @@ On itère les phases 1 et 2 jusqu'à l'obtention d'un fichier de travail satisfa
   - rajouter en header un user-agent usuel de navigateur/tablette/smartphone et le referrer utilisé sur le site constituent une bonne pratique
   - ne pas oublier l'open data qui donne directement les données sous un format, normalement directement exploitable.
   - analyser entièrement le code source de la page Web à scraper. En effet, il arrive régulèrement que les données recherchées soient directement disponibles sous forme de lien vers un fichier json complet ou que ce dernier soit déclaré dans une variable javscript dans le code Html !
-  - certains sites bloquent tout robot, passer alors par une sauvegarde html via le navigateur. Automatiser (via plugin navigateur ad-hoc) ou pas (selon votre estimation de ROI) en variabilisant le tout si le site le permet. Parser ensuite les fichiers avec jsoup pour l'extraction des données.
+  - certains sites bloquent tout robot, passer alors par une sauvegarde html via le navigateur. Automatiser (via plugin navigateur ad-hoc) ou pas (selon votre estimation de ROI et si le site le permet) en variabilisant le tout. Parser ensuite les fichiers sauvegardés avec Jsoup pour l'extraction des données.
   
   #### Les sources de données, indications
   - Loisirs : plage : [bathing water directive status](https://www.eea.europa.eu/data-and-maps/data/bathing-water-directive-status-of-bathing-water-12), cinéma : [annuaire allocine](http://www.allocine.fr/salle/), médiathèque : [annuaire mairie](https://www.annuaire-mairie.fr/bibliotheque.html)
@@ -69,7 +68,8 @@ Stack technique : Eclipse, Java 8, Spring Boot (starter Web) avec Maven et twitt
  - au démarrage de l'application, une phase d'init est opérée pendant laquelle on charge la liste des points possibles (~67k) et tous les éléments des critères (~77k au total). On construit, *par critère*, 2 TreeMaps, une pour les latitudes des éléments, l'autre pour les longitudes des éléments.
  - de facon générale, la recherche consiste à itérer sur chaque point possible et sur chaque critère afin de déterminer le nombre d'éléments qui matchent.  
  Cela permet de calculer le score du point et de déterminer ainsi si l'on conserve ou non le point en résultat de recherche.  
- En itération sur le critère, on calcule à partir des coordonnées du point en cours de traitement et de la distance maximale souhaitée sur ce critère les bordures min et max en lat et lon. On fait l'intersection des éléments récupérés des TreeeMap lat et lon du critère avec ces paramètres de bordures.  
+ En itération sur le critère, on calcule à partir des coordonnées du point en cours de traitement et de la distance maximale souhaitée sur ce critère les bordures min et max en lat et lon. Attention, on n'est pas en coordonnées euclidiennes, et un degré de longitude dépende de la valeur de la latitude courante.  
+ On fait ensuite l'intersection des éléments récupérés des TreeeMap lat et lon du critère avec ces paramètres de bordures.  
  De ces coupes *horizontale* (en lat) et *verticale* (en lon), on affine le résultat, notamment pour les éléments  qui se trouvent aux pointes afin de garantir la distance maximale voulue et pour garantir la distance minimale demnandée.  
  On stoppe prématurément les calculs sur le point en cours :  
    - si un critère désigné comme obligatoire (i.e doit être à 100%) ne l'est pas
