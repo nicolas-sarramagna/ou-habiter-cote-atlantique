@@ -18,7 +18,7 @@ Si vous souhaitez échanger sur ce sujet, [contactez-moi](https://www.linkedin.c
 Voici quelques démos gif ci-dessous :
 
 1. Actions possibles sur les critères et recherche  
-    [demo critere recherche](/demos/01_demo_critere_recherche.gif)
+    ![demo critere recherche](/demos/01_demo_critere_recherche.gif)
 2. Interactions sur la carte partie 1/3 - vision globae, détail d'un point  
 
 3. Interaction sur la carte partie 2/3 - options d'affichage sur les éléments  
