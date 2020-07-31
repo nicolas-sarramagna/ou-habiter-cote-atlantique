@@ -26,9 +26,10 @@ On itère les phases 1 et 2 jusqu'à l'obtention d'un fichier de travail satisfa
   - phase 4 : vérification programmatique des latitudes et des longitudes : bornes min et max considérées comme acceptable sinon un Warning pour analyse manuelle est levé  
   - phase 5 : génération des éléments collectées sur une carte OpenStreetMap statique dans un fichier Html pour vérification visuelle de présence et de dispersion des points.  
  En cas de Warning de la phase 4, le point apparaît en général fortement hors du périmètre courant, l'appel API de récupération des lat/lon n'a pas été pertinent, il faut alors redresser les données à la main avec Google + Google Maps.  
- En phase 5, par exemple, si en analyse visuelle on voit très peu de généralistes en Vendée, il faut vérifier si c'est réellement le cas ou si on n'a pas récupéré toutes les données.  
- On itère les phases 4 et 5 pour avoir aucun Warning en pahse 4 et une analyse Métier satisfaisante en phase 5.  
+ En phase 5, si en analyse visuelle on voit, par exemple, très peu de médecins généralistes en Vendée, il faut vérifier si c'est réellement le cas ou si on n'a pas un raté sur la phase de collecte ou si la source est incomplète.  
+ On itère les phases 4 et 5 pour n'avoir aucun Warning (phase 4) et une analyse Métier satisfaisante (phase 5).    
  A ce stade, on dispose du fichier de sortie cvs qui servira d'input en partie Back de la Web App.  
+ 
  Ce dernier comprend globalement les colonnes suivantes : 
   - département
   - nom du site ou nom et prénom d'un professionel de santé
