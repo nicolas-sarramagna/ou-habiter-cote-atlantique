@@ -15,7 +15,7 @@ Exemple plus rapproché d'une partie de l'ensemble de points :
   - Santé : pédiatre, généraliste, pharmacie, gynécologue, hopital, maternité (niveau 3), dermatologue, ophtalmologue
   - Education : maternelle, primaire, collège, lycée, études supérieures
   - Services de proximité : bureau de poste, agence Société Générale (contexte projet), marché, supermarché (carrefour city et contact, petit casino, 8 à 8, monoprix, simply market, spar, vival)
-  - Services : hypermarché (auchan, carrefour, carrefour market, geant casino, intermarche, leclerc, super casino, super u), bricolage (brico depot, bricomarche, bricorama, castorama, leroy merlin), Décathlon, ameublement (but, conforama, la casa, ikea), Ikea (déjà compris dans le critère ameublement, critère supplémentaire spécifique aux besoins de ma recherche), culture (fnac, cultura)
+  - Services : hypermarché (auchan, carrefour, carrefour market, geant casino, intermarche, leclerc, super casino, super u), bricolage (brico depot, bricomarche, bricorama, castorama, leroy merlin), Décathlon, ameublement (but, conforama, la casa, ikea), Ikea (déjà compris dans le critère ameublement, création de ce critère supplémentaire pour les besoins de ma recherche), culture (fnac, cultura)
   - Transports : aéroport, gare
   - Immobilier : prix/m2 et anciennes ventes avec prix actualisé, données issues de Etalab, base DVF notamment
    
