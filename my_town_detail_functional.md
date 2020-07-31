@@ -27,7 +27,7 @@ Sur un objectif d'achat immobilier, la validation du secteur sur place m'appara�
 ### Recherche
   - sélection des critères à utiliser en recherche (mini 1)  
   Ex : boulangerie
-  - choix pour chaque critère de la distance maximale (intervalle de distance prédéfini dans le fichier html)    
+  - choix pour chaque critère de la distance maximale (intervalle de distance possible prédéfini dans le fichier html)    
   Ex : boulangerie à moins de 800m
   - choix pour chaque critère du nombre d'éléments voulus  
   Ex : 2 boulangeries à moins de 800m
@@ -40,12 +40,12 @@ Sur un objectif d'achat immobilier, la validation du secteur sur place m'appara�
  - performance en temps de recherche et d'affichage permettant l'affinage des critères par interrogation multiple de la fonction de recherche
  
 ### Résultats sur la carte
- - affichage global des résultats pour visualisation globale
+ - positionnement de l'affichage permettant une visualisation globale des résultats
  - fonction clic & zoom sur un point de carte permettant de se positionner directement dans la zone géographique du point de résultat
- - en clic sur le point de résultat, affichage paramétrable en nombre et choix des éléments des critères  
+ - sur les points de résultat, affichage paramétrable en nombre et en choix des éléments des critères  
  Ex : je n'affiche que les 2 plus proches éléments et que ceux du domaine Santé et du critère culture
  - export pdf de la carte, avec échelle, selon le niveau de zoom courant  
- Cela permet d'inspecter sur le terrain les points de résultat et globalemnt d'échanger sur les zones géographiques des résultats 
+ Cela permet d'inspecter sur le terrain les points de résultat et globalement d'échanger sur les zones géographiques des points de résultat 
  - possibilité de basculer vers un rendu Google Maps (pour affichage des Points d'Intérêt Maps par ex) et un rendu Google Satellite (pour une meilleure visibilité terrain des points)
 
 ### Détails textuels complémentaires d'un point de résultat
