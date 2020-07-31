@@ -89,7 +89,7 @@ Stack technique : Eclipse, Html5, CSS, Javascript avec libs Bootstrap, Jquery, L
 Interface divisée en 4 parties :
 - zone de recherche : sliders construits avec la lib js [ion.rangeSlider](https://github.com/IonDen/ion.rangeSlider)
 
-- zone de resulats avec la carte
+- zone de résulats avec la carte
 	- passage de la map Leaflet en canvas pour un affichage fluide sur beaucoup de points de résultat
 	- utilisation de la lib js pour Leaflet [L.Control.Layers.Tree](https://github.com/jjimenezshaw/Leaflet.Control.Layers.Tree) pour les filtres par critères ou par domaine de critères sur la map
 	TODO screenshot
