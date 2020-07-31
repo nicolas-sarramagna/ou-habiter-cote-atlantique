@@ -90,9 +90,9 @@ Ce WS retourne la liste des points avec id, lat, lon et score.
 public ResponseEntity<ResultatDetail> getCriteresFromPointIdExtra (@RequestParam int pointId,
 			@RequestBody List<CritereMinimal> cList) throws Exception {
 ```
-Le WS **/algofiltre-extra** prend en entrée un id de point et retourne la liste des éléments des critères avec pour chacun lat, lon, une description, et la distance en m vis à vis du point.
+Le WS **/algofiltre-extra** prend en entrée un id de point et retourne la liste des éléments des critères avec pour chacun lat, lon, une description, et la distance en mètres vis à vis du point.
 
-- Pas de sécurité mise en oeuvre, l'application tourne et est utilisée en local sur le poste de dev.
+- l'application tourne et est utilisée en local sur le poste de dev : pas de process de déploiement ou de principes de sécurité particuliers mis en oeuvre.
 
 ### Projet Front - interface Web
 Stack technique : Eclipse, Html5, CSS, Javascript avec libs Bootstrap, Jquery, Leaflet + plugins 
