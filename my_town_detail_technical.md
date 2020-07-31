@@ -121,3 +121,5 @@ Interface divisée en 4 parties, cf copie d'écran ci-dessous scalée à 80% pou
 - appels à l'api REST via Jquery
 
 - manipulation de la logique Front avec Jquery et pur Javascript, en ordre d'idée, cela donne ~850 lignes de code JS, commentaires et indentation comprises.
+
+Côté fonctionnel, c'est sur ce lien : [my_town_detail_functional.md](/my_town_detail_functional.md "détails fonctionnels sur le projet")
