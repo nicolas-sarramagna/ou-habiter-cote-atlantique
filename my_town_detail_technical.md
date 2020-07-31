@@ -40,12 +40,13 @@ On itère les phases 1 et 2 jusqu'à l'obtention d'un fichier de travail satisfa
   - longitude
 
  #### Retours sur le scraping
-  - librairie [Jsoup](https://jsoup.org/) simple et efficace (jsoup peut gérer les cookies si besoin)
+  - librairie [Jsoup](https://jsoup.org/) simple et efficace (avec gestion des cookies pour les sources qui le nécessitent)
   - randomiser de quelques secondes les appels de scraping en init et sur les appels suivants
-  - sur limitation à cause de quota journalier maximal d'appels, changer momentanément d'ip avec [VPNBook](https://www.vpnbook.com/) par exemple.
-  - rajouter en header un user-agent courant et le referrer utilisé sur le site constituent une bonne pratique
+  - sur limitation à cause de quota journalier maximal d'appels, changer plusieurs fois d'ip avec [VPNBook](https://www.vpnbook.com/) par exemple et étaler la collecte sur plusieurs jours.
+  - rajouter en header un user-agent usuel de navigateur/tablette/smartphone et le referrer utilisé sur le site constituent une bonne pratique
   - ne pas oublier l'open data qui donne directement les données sous un format, normalement directement exploitable.
-  - analyser entièrement le code source de la page Web à scraper. En effet, il arrive régulèrement que les données soient directement disponibles sous forme de lien vers un fichier json complet ou que ce dernier soit déclaré dans une variable javscript dans le code Html !
+  - analyser entièrement le code source de la page Web à scraper. En effet, il arrive régulèrement que les données recherchées soient directement disponibles sous forme de lien vers un fichier json complet ou que ce dernier soit déclaré dans une variable javscript dans le code Html !
+  - certains sites bloquent tout robot, passer alors par une sauvegarde html via le navigateur, automatiser (via plugin navigateur ad-hoc) en variabilisant le tout si le site le permet. Parser ensuite les fichiers avec jsoup pour l'extraction des données.
    
 ### Projet Back - services REST
 Stack technique : Eclipse, Java 8, Spring Boot (start Web) avec Maven avec twitter4j + commons-lang/io. Pas de bases de données.
