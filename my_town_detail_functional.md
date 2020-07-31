@@ -5,7 +5,7 @@ Il convient de déterminer des ~ 67000 points de la carte présentée ci-dessous
 ![image of the map all points](/screenshots/screenshot_map_all_points.png "Map avec tous les points de la carte")
 
 Zoom sur la carte pour visualiser précisément un ensemble de points :
-![image of the map all points](/screenshots/screenshot_map_all_points_detail_example.png "Zoom sur la map des points de résultat")
+![image of the map all points](/screenshots/screenshot_map_all_points_detail_example2.png "Zoom sur la map des points de résultat")
 
 ## Critères mis en place
 
