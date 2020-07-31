@@ -13,7 +13,7 @@ Zoom sur la carte pour visualiser précisément un ensemble de points :
   - Santé : pédiatre, généraliste, pharmacie, gynécologue, hopital, maternité (de niveau 3 dans le cadre du projet), dermatologue, ophtalmologue
   - Education : maternelle, primaire, collège, lycée, études supérieures
   - Services de proximité : bureau de poste, agence Société Générale (contexte projet), marché, supermarché (carrefour city et contact, petit casino, 8 à 8, monoprix, simply market, spar, vival)
-  - Services : hypermarché (auchan, carrefour, carrefour market, geant casino, intermarche, leclerc, super casino, super u), bricolage (brico depot, bricomarche, bricorama, castorama, leroy merlin), Décathlon, ameublement (but, conforama, la cas, ikea), Ikea (critère spécifique bien que déjà compris dans le criète ameublement, créé pour le contexte de ma recherche), culture (fnac, cultura)
+  - Services : hypermarché (auchan, carrefour, carrefour market, geant casino, intermarche, leclerc, super casino, super u), bricolage (brico depot, bricomarche, bricorama, castorama, leroy merlin), Décathlon, ameublement (but, conforama, la cas, ikea), Ikea (critère spécifique bien que déjà compris dans le critère ameublement, critère Ikea créé pour le contexte de ma recherche), culture (fnac, cultura)
   - Transports : aéroport, gare
   - Immobilier : prix/m2 et anciennes ventes avec prix actualisé, données issues de Etalab, base DVF notamment
    
