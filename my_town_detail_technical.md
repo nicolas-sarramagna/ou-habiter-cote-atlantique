@@ -53,7 +53,7 @@ On itère les phases 1 et 2 jusqu'à l'obtention d'un fichier de travail satisfa
   - certains sites bloquent tout robot, passer alors par une sauvegarde html via le navigateur. Automatiser (via plugin navigateur ad-hoc) ou pas (selon votre estimation de ROI) en variabilisant le tout si le site le permet. Parser ensuite les fichiers avec jsoup pour l'extraction des données.
   
   #### Les sources de données, indications
-  - Loisirs : plage : [bathing water directive status](https://www.eea.europa.eu/data-and-maps/data/bathing-water-directive-status-of-bathing-water-12), cinéma, piscine, médiathèque, salle de sport
+  - Loisirs : plage : [bathing water directive status](https://www.eea.europa.eu/data-and-maps/data/bathing-water-directive-status-of-bathing-water-12), cinéma : [annuaire allocine](http://www.allocine.fr/salle/), médiathèque : [annuaire mairie](https://www.annuaire-mairie.fr/bibliotheque.html)
   - Santé : après travaux sur les données de l'annuaire d'Ameli et les données [data.gouv.fr, annuaire santé de la Cnam](https://www.data.gouv.fr/fr/datasets/annuaire-sante-de-la-cnam/), j'ai noté (avec Maps + doctolib) qu'on était loin d'avoir l'exhaustivité des professionnels de santé. Je recommande plutôt l'annuaire du [conseil national de l'Odre des médecins](https://www.conseil-national.medecin.fr/annuaire)  
   - Education : data.gouv.fr et data.education.gouv.fr
   - Services de proximité : bureau de poste, agence Société Générale (contexte projet), marché, supermarché : sites des magasins principalement
