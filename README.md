@@ -29,9 +29,9 @@ Les détails se trouvent dans le fichier [my_town_detail_functional.md](/my_town
 
 ## Côté technique
 3 parties :
-  - 1 partie **Source** dédié à la collecte des données et leur mise en forme, projet non lié à la Web App.
-  - 1 partie **Back** Web App backend qui sert des services REST
-  - 1 partie **Front** Web App frontend Javascript pour l'interface
+  - 1 partie **Source**, dédiée à la collecte des données et leur mise en forme, projet non lié à la Web App.
+  - 1 partie **Back**, pour la Web App côté backend qui sert des services REST
+  - 1 partie **Front**, pour la Web App côté frontend en Javascript pour l'interface Web
   
 Les détails se trouvent dans le fichier [my_town_detail_technical.md](/my_town_detail_technical.md "détails techniques sur le projet")
   
