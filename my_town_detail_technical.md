@@ -101,7 +101,9 @@ Le WS **/algofiltre-extra** prend en entrée un id de point et retourne la liste
 ### Projet Front - interface Web
 Stack technique : Eclipse, Html5, CSS, Javascript avec libs Bootstrap, Jquery, Leaflet + plugins 
 
-Interface divisée en 4 parties :
+Interface divisée en 4 parties, cf copie d'écran ci-dessous scalée à 80% pour bien voir les 4 zones :
+![image of the interface 4 zones](/screenshots/screenshot_map_4_zones_80.png "Interface avec les 4 zones")
+
 - zone de recherche : sliders construits avec la lib js [ion.rangeSlider](https://github.com/IonDen/ion.rangeSlider)
 
 - zone de résulats avec la carte
