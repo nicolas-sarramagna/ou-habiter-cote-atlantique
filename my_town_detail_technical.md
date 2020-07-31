@@ -19,8 +19,8 @@ Le process général d'un *main* pour un critère est :
  - phase 1 : scraping i.e récupération brute des données
  - phase 2 : extraction des données et écriture dans un fichier csv de travail dédié  
 On itère les phases 1 et 2 jusqu'à l'obtention d'un fichier de travail satisfaisant.
- - phase 3 : alimentation des latitudes et longitudes non renseignées, par appel d'API Maps (api OpenStreeetMap bien moins efficace) ou à la main en cas d'échec (vérification Google + recherche manuelle dans Maps)
- Il arrive également qu'à cette phase qu'on fasse des corrections manuelles d'adresse.  
+ - phase 3 : alimentation des latitudes et longitudes non renseignées, par appel d'API Maps (api OpenStreeetMap bien moins efficace) ou à la main en cas d'échec (vérification Google + recherche manuelle dans Maps).  
+ Il arrive également qu'à cette phase l'on fasse des corrections manuelles d'adresse.  
  On écrit en sorite dans un nouveau fichier csv qui sera celui cible.
  On itère la phase 3 jusqu'au remplissage complet des latitudes et longitudes.
   - phase 4 : vérification programmatiques des latitudes et des longitudes : bornes min et max considérées comme acceptables sinon un Warning pour analyse manuelle est levé  
