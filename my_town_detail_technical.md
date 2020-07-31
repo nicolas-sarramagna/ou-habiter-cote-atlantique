@@ -1,13 +1,16 @@
 ## Contexte de construction
-La construction s'est faite à partir d'un backlog initial, centré sur les US principales que sont une recherche efficace et un affichage exploitable des points.
+La construction s'est faite à partir d'un backlog initial, centré sur les US principales que sont :
+- un jeu de données minimal
+- un principe de recherche efficient et efficace avec une première implémentation 
+- un carte des points visuellement exploitable
 
 La construction itérative a fait émerger de nouveaux besoins et de nouvelles idées dont certains n'ont pas été implémentés ou intégrés à la solution.
+
 En effet, la cible était de disposer d'un App opérationnelle permettant de donner des résultats concrets suffisamment pertinents et exploitables.  
 Ainsi, certaines US n'ont pas été prises car :
- - elles avaitent une faible Businness Value
- - l'effort de mise en oeuvre et/ou d'intégration était jugé trop important
- - le ROI était trop faible
- - les données étaient indisponibles ou demandaient trop d'effort de collecte/analyse/mise en forme
+ - elles avaitent une faible Businness Value ou
+ - l'effort de mise en oeuvre et/ou d'intégration était jugé trop important (même si la BV était importante, ex [géorisques](https://www.georisques.gouv.fr/), carte de bruits) ou
+ - les données étaient indisponibles ou demandaient trop d'effort de collecte/analyse/de mise en forme
  
 
 ### Projet Source
