@@ -1,5 +1,5 @@
 ## Contexte de construction
-La construction s'est faite à partir d'un backlog initial, centré sur les US principales que sont :
+La construction s'est faite à partir d'un backlog initial, centré sur les US principales suivantes :
 - un jeu de données minimal
 - un principe de recherche efficient et efficace avec une première implémentation 
 - un carte des points visuellement exploitable
