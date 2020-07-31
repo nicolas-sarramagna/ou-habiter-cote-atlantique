@@ -56,8 +56,8 @@ Ex : nom du magasin et adresse pour les hypermarchés
 - la mise en exergue des résultats qui ne correpondent pas à 100% des critères
 
 ### Historique des recherches
-L'historique des recheches perdure après la fermeture du navigateur, mais pas en suppression d'historique du navigateur (utilisation du localstorage)
-- choix de chargement des paramètres d'une ancienne recherche (choix des critères, paramètres sur les critères, du mode de recherche, ...)
+ - l'historique des recheches perdure après la fermeture du navigateur. Les anciennes recherchent sont effacées en cas de suppression d'historique du navigateur (utilisation du localstorage)
+- possibilité de charger une ancienne recherche 
 - suppression ciblée, globale des anciennes recherches
 - affichage des paramètres des anciennes recherches
 
