@@ -27,7 +27,7 @@ Sur un objectif d'achat immobilier, la validation du secteur sur place m'appara�
 ## Fonctionnalités rendues
 
 ### Recherche
-  - sélection des critères à utiliser en recherche (mini 1)  
+  - sélection des critères à utiliser en recherche  
   Ex : boulangerie
   - choix pour chaque critère de la distance maximale (intervalle de distance possible prédéfini dans le fichier html)    
   Ex : boulangerie à moins de 800m
