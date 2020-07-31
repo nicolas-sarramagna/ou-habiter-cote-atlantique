@@ -52,14 +52,14 @@ On itère les phases 1 et 2 jusqu'à l'obtention d'un fichier de travail satisfa
   - analyser entièrement le code source de la page Web à scraper. En effet, il arrive régulèrement que les données recherchées soient directement disponibles sous forme de lien vers un fichier json complet ou que ce dernier soit déclaré dans une variable javscript dans le code Html !
   - certains sites bloquent tout robot, passer alors par une sauvegarde html via le navigateur. Automatiser (via plugin navigateur ad-hoc) ou pas (selon votre estimation de ROI) en variabilisant le tout si le site le permet. Parser ensuite les fichiers avec jsoup pour l'extraction des données.
   
-  #### Les sources de données TODO à détailler
+  #### Les sources de données, indications
   - Loisirs : plage, cinéma, piscine, médiathèque, salle de sport
-  - Santé : pédiatre, généraliste, pharmacie, gynécologue, hopital, maternité (de niveau 3 dans le cadre du projet), dermatologue, ophtalmologue
-  - Education : maternelle, primaire, collège, lycée, études supérieures
+  - Santé : après travaux sur les données de l'annuaire d'Ameli et les données [data.gouv.fr, annuaire santé de la Cnam](https://www.data.gouv.fr/fr/datasets/annuaire-sante-de-la-cnam/), j'ai noté (avec Maps !) qu'on était loin d'avoir l'exhaustivité des professionnels de santé. Je recommande l'annuaire du [conseil national de l'Odre des médecins](https://www.conseil-national.medecin.fr/annuaire)  
+  - Education : data.gouv.fr et data.education.gouv.fr
   - Services de proximité : bureau de poste, agence Société Générale (contexte projet), marché, supermarché (carrefour city et contact, petit casino, 8 à 8, monoprix, simply market, spar, vival)
   - Services : hypermarché (auchan, carrefour, carrefour market, geant casino, intermarche, leclerc, super casino, super u), bricolage (brico depot, bricomarche, bricorama, castorama, leroy merlin), Décathlon, ameublement (but, conforama, la cas, ikea), Ikea , culture (fnac, cultura)
   - Transports : aéroport, gare
-  - Immobilier : prix/m2 et anciennes ventes avec prix actualisé, données issues de Etalab, base DVF notamment
+  - Immobilier : Etalab, [base DVF](https://www.data.gouv.fr/fr/datasets/demandes-de-valeurs-foncieres-geolocalisees), notamment
 
   
 ### Projet Back - services REST
