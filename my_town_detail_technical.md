@@ -9,8 +9,8 @@ La construction itérative a fait émerger de nouveaux besoins et de nouvelles i
 En effet, la cible était de disposer d'un App opérationnelle permettant de donner des résultats concrets suffisamment pertinents et exploitables.  
 Ainsi, certaines US n'ont pas été prises car :
  - elles avaitent une faible Businness Value ou
- - l'effort de mise en oeuvre et/ou d'intégration était jugé trop important (même si la BV était importante, ex [géorisques](https://www.georisques.gouv.fr/), carte de bruits) ou
- - les données étaient indisponibles ou demandaient trop d'effort de collecte/analyse/de mise en forme
+ - l'effort de mise en oeuvre et/ou d'intégration était jugé trop important (même si la BV était importante, ex [géorisques](https://www.georisques.gouv.fr/)) ou
+ - les données étaient indisponibles, incomplètes ou demandaient trop d'effort de collecte/analyse/de mise en forme voire de création (ex carte de bruits)
  
 
 ### Projet Source
