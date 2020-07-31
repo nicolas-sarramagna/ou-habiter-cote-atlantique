@@ -18,11 +18,11 @@ Si vous souhaitez échanger sur ce sujet, [contactez-moi](https://www.linkedin.c
 Voici quelques démos gif ci-dessous :
 
 1. Actions possibles sur les critères et recherche  
-    [demo critere recherche](/demos/01_demo_critere_recherche.gif)
+    [démo critère recherche](/demos/01_demo_critere_recherche.gif)
 2. Interactions sur la carte partie 1/3 - vision globae, détail d'un point  
-    [demo critere recherche](/demos/02_demo_globale_point.gif)
+    [démo point résultat](/demos/02_demo_globale_point.gif)
 3. Interaction sur la carte partie 2/3 - options d'affichage sur les éléments  
-
+    [démo option élément](/demos/03_demo_option_element.gif)
 3. Interactions sur la carte partie 3/3 - fonds de carte, export
 
 4. Partie textuelle d'un point de résultat - paramétrage, identification de critères non matchés
