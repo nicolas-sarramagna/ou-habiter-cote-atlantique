@@ -1,5 +1,5 @@
 ## Contexte de construction
-La construction s'est faite à partie d'un backlog initial, centré sur les points principaux que sont une recherche efficace et un affichage exploitable des points.
+La construction s'est faite à partir d'un backlog initial, centré sur les US principales que sont une recherche efficace et un affichage exploitable des points.
 
 La construction itérative a fait émerger de nouveaux besoins et de nouvelles idées dont certains n'ont pas été implémentés ou intégrés à la solution.
 En effet, la cible était de disposer d'un App opérationnelle permettant de donner des résultats concrets suffisamment pertinents et exploitables.  
