@@ -13,7 +13,7 @@ Si vous avez les mêmes besoins, vous aurez un retour d'expérience pour votre m
 
 Si vous souhaitez échanger sur ce sujet, [contactez-moi](https://www.linkedin.com/in/nicolas-sarramagna) ! :)
 
-Image de présentation générale :  
+Image de présentation générale (cliquer dessus pour l'agrandir):  
 ![image de presentation](/screenshots/screenshot_map_presentation3.png "présentation de l'interface")
  
 ## Démos
