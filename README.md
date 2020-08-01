@@ -15,7 +15,7 @@ Si vous souhaitez échanger sur ce sujet, [contactez-moi](https://www.linkedin.c
 
 ## Démos
 
-Page de démos dans ce fichier [my_town_demos.md](/my_town_demo.md "page de démos")
+Page de démos dans ce fichier [my_town_demos.md](/my_town_demos.md "page de démos")
 
 ## Côté fonctionnel
 35 critères ont été intégrés à date. 
