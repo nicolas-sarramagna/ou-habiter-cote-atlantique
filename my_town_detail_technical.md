@@ -113,7 +113,7 @@ Interface divisée en 4 parties, cf copie d'écran ci-dessous scalée à 80% pou
 	- utilisation de la lib js pour Leaflet [leaflet.browser.print](https://github.com/Igor-Vladyka/leaflet.browser.print) pour l'export pdf de la carte
 	- positionnement du score dans les markers Leaflet, lors d'une recherche avec score < 100% permis, que pour un nombre de résultats < 1000 sinon performance d'interaction dégradée ; utilisation du bindTooltip à améliorer (la MR Leaflet suivante [https://github.com/Leaflet/Leaflet/issues/6734)](https://github.com/Leaflet/Leaflet/issues/6734) pourrait aider).
 	
-- zone de résultats au format texte pour le détail d'un point : format des description fait côté back
+- zone de résultats au format texte pour le détail d'un point : format des descriptions fait côté back
 
 - zone de recherche : sliders construits avec la lib js [ion.rangeSlider](https://github.com/IonDen/ion.rangeSlider)
 
