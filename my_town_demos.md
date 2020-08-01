@@ -12,7 +12,8 @@ Voici quelques démos gif ci-dessous :
     ![démo option élément](/demos/03_demo_option_element.gif)
     
 3. Interactions sur la carte partie 3/3 - fonds de carte, export
-
+     ![démo fonds carte print](/demos/04_demo_fonds_carte_print.gif)
+     
 4. Partie textuelle d'un point de résultat - paramétrage, identification de critères non matchés
 
 5. Manipulation de l'historique
