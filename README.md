@@ -14,7 +14,7 @@ Si vous avez les mêmes besoins, vous aurez un retour d'expérience pour votre m
 Si vous souhaitez échanger sur ce sujet, [contactez-moi](https://www.linkedin.com/in/nicolas-sarramagna) ! :)
 
 Image de présentation générale :  
-![image de presentation](/screenshots/screenshot_map_presentation.png "présentation de l'interface")
+![image de presentation](/screenshots/screenshot_map_presentation2.png "présentation de l'interface")
  
 ## Démos
 
