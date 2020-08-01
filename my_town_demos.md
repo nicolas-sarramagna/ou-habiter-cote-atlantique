@@ -9,7 +9,7 @@ Voici quelques démos gif ci-dessous :
     ![démo point résultat](/demos/02_demo_globale_point.gif)
     
 3. Interaction sur la carte partie 2/3 - options d'affichage sur les éléments  
-    ![démo option élément](/demos/03_demo_option_element.gif)
+    ![démo option élément](/demos/03_demo_option_element3.gif)
     
 3. Interactions sur la carte partie 3/3 - fonds de carte, export
      ![démo fonds carte print](/demos/04_demo_fonds_carte_print.gif)
