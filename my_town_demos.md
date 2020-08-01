@@ -15,7 +15,8 @@ Voici quelques démos gif ci-dessous :
      ![démo fonds carte print](/demos/04_demo_fonds_carte_print.gif)
      
 4. Partie textuelle d'un point de résultat - paramétrage, identification de critères non matchés
-
+      ![démo option texte](/demos/05_demo_option_texte.gif)
+      
 5. Manipulation de l'historique
 
 Côté fonctionnel, c'est sur ce lien : [my_town_detail_functional.md](/my_town_detail_functional.md "détails fonctionnels sur le projet")
